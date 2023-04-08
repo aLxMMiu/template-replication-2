@@ -1,0 +1,46 @@
+/* CSS RESET */
+*{
+    margin:0;
+    padding:0;
+}
+/* CSS RESET */
+:root{
+    --main-color-100: #ff6600;
+}
+
+body{
+    background-color: black;
+}
+.header__container{
+    min-height: 403px;
+    background-image:url(images/bg.gif)
+}
+.menu__bar__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:35px;
+}
+.menu__bar{
+    min-width:575px;
+}
+.menu__bar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.menu__bar a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    font-weight: bold;
+    font-size: 0.85em;
+    text-decoration: none;
+    color:white;
+    display: inline-block;
+    padding:0.5rem 1rem;
+
+}
+
+.menu__bar a:hover{
+    background-color: var(--main-color-100);
+    border-radius: 5px;
+}
