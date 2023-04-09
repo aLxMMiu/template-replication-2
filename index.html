@@ -40,19 +40,41 @@
     <div class="header__content__container">
       <div class="header__content__left">
         <div class="logo"></div>
+        <div class="text"></div>
         <div class="join__now__container">
           <div class="join__now"></div>
         </div>
       </div>
       <div class="header__content__right">
         <div class="search__container">
-          <form action="" class="search__form">
+          <div class="search__form__container">
+            <form action="">
+              <div>
+                <label for="search">Search</label>
+                <input id="search" type="text" placeholder="Your email id">
+              </div>
+              <div class="search__form__button">
+                <button action="submit">GO</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="login__container">
+          <div class="login__header"></div>
+          <form action="" class="login__form">
             <div>
-              <label for="search">Search</label>
-              <input id="search" type="text" placeholder="Your email id" />
+              <label for="name">Your name</label>
+              <input type="text" id="name">
             </div>
             <div>
-              <button type="submit">GO</button>
+              <label for="password">Password</label>
+              <input type="text" id="password">
+            </div>
+            <div class="login__register__button">
+              <a href="#">want to register</a>
+            </div>
+            <div class="login__login__button">
+              <button action="submit">LOGIN</button>
             </div>
           </form>
         </div>
