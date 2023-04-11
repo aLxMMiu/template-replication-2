@@ -1,0 +1,53 @@
+/* CSS RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS RESET */
+
+/* VARIABLES */
+:root {
+  --clr-bg-menu-bar: #34160c;
+  --clr-txt-menu-bar: white;
+  --clr-hvr-menu-bar: #ff6600;
+}
+/* VARIABLES */
+
+body,
+body > * {
+  display: grid;
+  box-sizing: border-box;
+}
+
+.header__menu_bar__container {
+  display: grid;
+  justify-content: center;
+  background: var(--clr-bg-menu-bar);
+}
+
+.header__menu_bar ul {
+  list-style: none;
+}
+
+.header__menu_bar li {
+  float: left;
+}
+
+.header__menu_bar li > a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--clr-txt-menu-bar);
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.35s;
+}
+
+.header__menu_bar li > a:hover {
+  background-color: var(--clr-hvr-menu-bar);
+  transition: background-color 0.25s;
+}
