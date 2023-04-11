@@ -43,7 +43,7 @@ body > * {
   font-weight: bold;
   color: var(--clr-txt-menu-bar);
   padding: 0.6rem 1rem;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   transition: background-color 0.35s;
 }
 
