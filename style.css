@@ -8,24 +8,25 @@
 
 /* CSS RESET */
 
-/* VARIABLES */
+/* GLOBAL VARIABLES */
 :root {
   --clr-primary-600: #34160c;
   --clr-primary-100: #fff8f0;
   --clr-hvr-menu-bar: #ff6600;
 }
-/* VARIABLES */
+/* GLOBAL VARIABLES */
 
 .header__menu_bar__container {
   display: flex;
   justify-content: center;
+  width: 100%;
   background: var(--clr-primary-600);
 }
 
 .header__menu_bar ul {
   list-style: none;
   display: flex;
-  gap: 0.5rem;
+  /* gap: 0.5rem; */
 }
 
 .header__menu_bar li {
@@ -39,9 +40,20 @@
   font-size: 0.8rem;
   font-weight: bold;
   color: var(--clr-primary-100);
-  padding: 0.6rem 0.5rem;
+  padding: 0.62rem 1rem;
   border-radius: 0.3rem;
   transition: background-color 0.6s ease-out;
+}
+
+@media screen and (max-width: 750px) {
+  .header__menu_bar li > a {
+    padding: 0.62rem 0.5rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .header__menu_bar li > a {
+    font-size: 0.65rem;
+  }
 }
 
 .header__menu_bar li > a:hover {
@@ -54,6 +66,8 @@
 }
 
 .header__container {
+  background-image: url("/images/bg.gif");
+  background-repeat: repeat-x;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -61,33 +75,40 @@
 }
 
 .header__content__left {
-  position: relative;
-}
-
-.header__content__left__container {
-  position: absolute;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  inset: 0;
+  width: 511px;
+  height: 368px;
+}
+.header__content__left__container {
+  background-image: url("/images/header_bg.gif");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  padding: 1.55rem 1.55rem 0;
 }
 
-.header__content__left__logo,
-.header__content__left__text,
-.header__content__left__img {
-  align-self: center;
+.header__content__left__logo {
+  background-image: url("/images/logo.gif");
+}
+.header__content__left__text {
+  background-image: url("/images/header_text.gif");
 }
 
-.header__content__left__img {
-  align-self: flex-end;
-  margin-right: 2.5rem;
+.header__content__left__flair {
+  background-image: url("/images/join_text.gif");
+}
+
+.header__content__right {
+  flex-basis: 239px;
+}
+
+.search__container {
+  background-image: url("/images/search_bg.gif");
+  background-repeat: repeat-y;
 }
 
 .login__container {
-  flex-basis: 239px;
+  flex-basis: min(239px);
   background-image: url("/images/member_flat_bg.gif");
+  background-repeat: repeat-y;
 }
