@@ -1,4 +1,4 @@
-<html lang="en">
+<!DOCTYPE html lang="en">
 
 <head>
  <meta charset="UTF-8">
@@ -15,33 +15,31 @@
 <body>
  <header>
   <section class="header__container">
-   <div class="header__menu_bar__container">
-    <div class="header__menu_bar">
-     <ul>
-      <li>
-       <a class="selected" href="#">HOME</a>
-      </li>
-      <li>
-       <a href="#">ABOUT US</a>
-      </li>
-      <li>
-       <a href="#">CHAT</a>
-      </li>
-      <li>
-       <a href="#">BLOG</a>
-      </li>
-      <li>
-       <a href="#">FORUM</a>
-      </li>
-      <li>
-       <a href="#">CLIENTS</a>
-      </li>
-      <li>
-       <a href="#">CONTACT</a>
-      </li>
-     </ul>
-    </div>
-   </div>
+   <nav class="header__menu_bar">
+    <ul>
+     <li>
+      <a class="selected" href="#">HOME</a>
+     </li>
+     <li>
+      <a href="#">ABOUT US</a>
+     </li>
+     <li>
+      <a href="#">CHAT</a>
+     </li>
+     <li>
+      <a href="#">BLOG</a>
+     </li>
+     <li>
+      <a href="#">FORUM</a>
+     </li>
+     <li>
+      <a href="#">CLIENTS</a>
+     </li>
+     <li>
+      <a href="#">CONTACT</a>
+     </li>
+    </ul>
+   </nav>
    <div class="header__content__left">
     <img src="/images/header_bg.gif">
     <div class="header__content__left__container">
@@ -86,6 +84,44 @@
    </div>
   </section>
  </header>
+ <main>
+  <section class="main__content__col__left">
+   <article class="main__content__article__we__are__the__future">
+    <h2>we are the <span>future</span></h2>
+    <p>consectetuer adipiscing elit. Nunc elementum suscipit metusane. Pellentesque tincidunt, ante sed vestibulum
+     laoreet, ipsum diam pharetra est, faucibus varius erat erat at lorem.</p>
+    <p><span>Suspendisse congue dignissim dolor.</span> Aliquam vel risusMauri turpis a lorem vehicula vehicula. Etiam
+     porta purus in urna.Sed justo arcu, iaculis vitae, <a href="#">condimentum non, venenatis sit</a> amet, sem. Sed
+     mauris leo,laoreet vel, ultrices a, ultrices vitae, magna. Duis porta metus non enim. Integer porta eleifend ante.
+     Donec ipsum ante, laoreet at, consectetuer quis, lobortis et, velit. Vivamus pharetra euismod lectus. <a
+      href="#">Morbi tortorturpis</a> uscipitut, lobortis id, eleifend a, leo. Nunc lectus metus, purus eget lacus.
+     Aliquam purus.</p>
+   </article>
+  </section>
+  <section class="main__content__col__right">
+   <div class="contact__container">
+    <div class="contact__form__container">
+     <div class="contact__form__header">
+      <h3><span class="first__word__accent">Contact</span> form</h3>
+     </div>
+     <form action="" id="contact__form">
+      <label for="name">Name</label>
+      <input type="text" id="name">
+      <label for="email__id">Email id</label>
+      <input type="text" id="email__id">
+      <label for="phone__number">Phone number</label>
+      <input type="text" id="phone__number">
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="6"></textarea>
+      <div class="contact__form__button__container"><button type="reset" form="contact__form"
+        value="RESET">RESET</button>
+       <button type="submit" form="contact__form" value="SUBMIT">SUBMIT</button>
+      </div>
+     </form>
+    </div>
+   </div>
+  </section>
+ </main>
 </body>
 
 </html>

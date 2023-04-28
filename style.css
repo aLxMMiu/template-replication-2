@@ -34,17 +34,34 @@ button {
   cursor: pointer;
 }
 
-input {
+input,
+textarea {
   border: 1px solid var(--clr-accent-200);
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   border: 1px solid var(--clr-accent-300);
   outline: none;
   outline-offset: 0;
 }
 
-.header__menu_bar__container {
+h3 {
+  margin-top: 0.3rem;
+  color: var(--clr-primary-600);
+  font-family: var(--fnt-h-primary);
+  font-size: 1.35rem;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+label {
+  font-family: var(--fnt-lbl);
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.header__menu_bar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,8 +212,6 @@ input:focus {
 
 .search__form__container h3 {
   margin-bottom: 0.5rem;
-  font-family: var(--fnt-h-primary);
-  font-weight: normal;
 }
 
 .search__form__container input {
@@ -269,20 +284,7 @@ input:focus {
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  padding-left: 2.5rem;
-}
-
-.login__form__header h3 {
-  color: var(--clr-primary-600);
-  font-family: var(--fnt-h-primary);
-  font-weight: normal;
-}
-
-.login__form__container label {
-  color: var(--clr-lbl);
-  font-family: var(--fnt-lbl);
-  font-weight: bold;
-  font-size: 0.75rem;
+  padding-left: 2.2rem;
 }
 
 .login__form__container input {
@@ -315,4 +317,109 @@ input:focus {
 
 .first__word__accent {
   color: var(--clr-accent-300);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
+}
+
+.main__content__col__left {
+  padding: 1.5rem;
+  width: 511px;
+}
+
+.main__content__article__we__are__the__future {
+}
+
+.main__content__col__right {
+  width: 211px;
+}
+
+.contact__container {
+  min-height: 380px;
+  width: 237px;
+}
+
+.contact__container::before,
+.contact__container::after {
+  display: inline-block;
+  content: "";
+  width: 237px;
+  height: 3px;
+}
+.contact__container::before {
+  background-image: url("/images/contact_top_curve.gif");
+}
+
+.contact__container::after {
+  background-image: url("/images/contact_bottom_curve.gif");
+}
+
+.contact__form__header {
+  background-image: url("/images/contact_bg.gif");
+  background-repeat: no-repeat;
+  height: 39px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding-left: 2.2rem;
+  width: 191px;
+}
+
+.contact__form__header h3,
+.contact__form__container form > label {
+  color: var(--clr-primary-100);
+}
+
+.contact__form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-primary-600);
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0 2rem;
+}
+
+.contact__form__container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.3rem 1.5rem 0.6rem;
+  height: 100%;
+  width: 100%;
+  gap: 0.2rem;
+}
+
+.contact__form__container textarea {
+  resize: none;
+}
+
+.contact__form__button__container {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.contact__form__button__container button {
+  width: 64px;
+  line-height: 19px;
+}
+
+.contact__form__button__container button:hover {
+  outline: 2px solid cornflowerblue;
+  border-radius: 4px;
+}
+
+.contact__form__button__container button:first-of-type {
+  background-image: url("/images/reset_bg.gif");
+}
+.contact__form__button__container button:last-of-type {
+  background-image: url("/images/submit_bg.gif");
 }
