@@ -565,6 +565,13 @@ footer {
   height: 127px;
 }
 
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
 .footer__nav {
   margin: 1.5rem 0 1rem 1rem;
 }
@@ -599,19 +606,31 @@ footer {
   text-decoration: underline;
 }
 
-.footer__details__container {
-  float: right;
-}
-
-.footer__details__container h5 {
+.footer__items h5 {
   color: #fcead6;
   font-size: 0.6rem;
   font-weight: normal;
   font-family: Tahoma, sans-serif;
+  align-self: self-end;
+}
+
+.footer__items > p {
+  align-self: self-end;
+  color: white;
+  font-family: Tahoma, san-serif;
+  font-weight: bold;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: -0.05rem;
+}
+
+.footer__items > p > span {
+  color: #fcead6;
 }
 
 .footer__icon__container {
   display: flex;
+  align-self: self-end;
   gap: 0.75rem;
 }
 
