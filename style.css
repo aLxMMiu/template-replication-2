@@ -117,7 +117,7 @@ button:hover {
 }
 
 .header__container {
-  background-image: url("/images/bg.gif");
+  background-image: url("/images/bg.gif"), url("images/bg.gif");
   background-repeat: repeat-x;
   display: flex;
   width: 100vw;
@@ -126,7 +126,7 @@ button:hover {
 }
 
 .header__content__left {
-  background-image: url("/images/header_bg.gif");
+  background-image: url("/images/header_bg.gif"), url("images/header_bg.gif");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -155,16 +155,17 @@ button:hover {
 }
 
 .header__content__left__logo {
-  background-image: url("/images/logo.gif");
+  background-image: url("/images/logo.gif"), url("images/logo.gif");
   margin-top: 1.55rem;
 }
 
 .header__content__left__text {
-  background-image: url("/images/header_text.gif");
+  background-image: url("/images/header_text.gif"),
+    url("images/header_text.gif");
 }
 
 .header__content__left__flair {
-  background-image: url("/images/join_text.gif");
+  background-image: url("/images/join_text.gif"), url("images/join_text.gif");
   margin-left: 20rem;
   align-self: flex-start;
 }
@@ -192,15 +193,17 @@ button:hover {
   height: 4px;
 }
 .search__container::before {
-  background-image: url("/images/search_top_curve.gif");
+  background-image: url("/images/search_top_curve.gif"),
+    url("images/search_top_curve.gif");
 }
 
 .search__container::after {
-  background-image: url("/images/search_bottom_curve.gif");
+  background-image: url("/images/search_bottom_curve.gif"),
+    url("images/search_bottom_curve.gif");
 }
 
 .search__form__container {
-  background-image: url("/images/search_bg.gif");
+  background-image: url("/images/search_bg.gif"), url("images/search_bg.gif");
   background-repeat: repeat-y;
   width: 100%;
   height: 100%;
@@ -230,7 +233,7 @@ button:hover {
 }
 
 .search__form__button {
-  background-image: url("/images/email_bg.gif");
+  background-image: url("/images/email_bg.gif"), url("images/email_bg.gif");
   background-repeat: no-repeat;
   margin-top: 1.2rem;
   width: 100%;
@@ -241,7 +244,7 @@ button:hover {
 .search__form__button button {
   height: 21px;
   width: 40px;
-  background-image: url("/images/go_btn_bg.gif");
+  background-image: url("/images/go_btn_bg.gif"), url("images/go_btn_bg.gif");
 }
 
 /* ///////////// LOGIN FORM /////////////// */
@@ -259,18 +262,21 @@ button:hover {
   height: 3px;
 }
 .login__container::before {
-  background-image: url("/images/member_top_curve.gif");
+  background-image: url("/images/member_top_curve.gif"),
+    url("images/member_top_curve.gif");
 }
 
 .login__container::after {
-  background-image: url("/images/member_bottom_curve.gif");
+  background-image: url("/images/member_bottom_curve.gif"),
+    url("images/member_bottom_curve.gif");
 }
 
 .login__form__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("/images/member_flat_bg.gif");
+  background-image: url("/images/member_flat_bg.gif"),
+    url("images/member_flat_bg.gif");
   background-repeat: repeat-y;
   width: 100%;
   height: calc(100% - 6px);
@@ -286,7 +292,7 @@ button:hover {
 }
 
 .login__form__header {
-  background-image: url("/images/member_bg.gif");
+  background-image: url("/images/member_bg.gif"), url("images/member_bg.gif");
   width: 185px;
   height: 33px;
   display: flex;
@@ -308,7 +314,8 @@ button:hover {
   width: 191px;
   text-align: center;
   line-height: 21px;
-  background-image: url("/images/register_bg.gif");
+  background-image: url("/images/register_bg.gif"),
+    url("images/register_bg.gif");
   color: var(--clr-lbl);
   font-weight: bold;
   font-family: var(--fnt-lbl);
@@ -316,7 +323,7 @@ button:hover {
 }
 
 .login__form__container button {
-  background-image: url("/images/login_bg.gif");
+  background-image: url("/images/login_bg.gif"), url("images/login_bg.gif");
   background-repeat: no-repeat;
   width: 63px;
   height: 19px;
@@ -333,6 +340,7 @@ main {
   width: 100vw;
   justify-content: center;
   margin-top: 1.5rem;
+  flex-wrap: wrap;
 }
 
 /* /////// MAIN CONTENT COLUMN LEFT /////// */
@@ -379,7 +387,8 @@ main {
 
 .article__separator {
   margin-left: 1.5rem;
-  background-image: url("/images/blog_small_bg_clear.png");
+  background-image: url("/images/blog_small_bg_clear.png"),
+    url("images/blog_small_bg_clear.png");
   background-repeat: no-repeat;
   margin-bottom: 1rem;
 }
@@ -402,7 +411,7 @@ main {
   width: 89px;
   line-height: 19px;
   text-align: center;
-  background-image: url("/images/read_bg.gif");
+  background-image: url("/images/read_bg.gif"), url("images/read_bg.gif");
   color: #fff;
   font-weight: bold;
   font-family: var(--fnt-btn-primary);
@@ -415,7 +424,8 @@ main {
 }
 
 .main__content__blog__article:last-of-type .article__separator {
-  background-image: url("/images/blog_small_bg.gif");
+  background-image: url("/images/blog_small_bg.gif"),
+    url("images/blog_small_bg.gif");
 }
 .main__content__blog__article:last-of-type h2 > span {
   font-family: Arial, Helvetica, sans-serif;
@@ -446,14 +456,14 @@ main {
   justify-content: end;
   align-items: center;
   height: 84px;
-  background-image: url("/images/launch_bg.gif");
+  background-image: url("/images/launch_bg.gif"), url("images/launch_bg.gif");
   background-repeat: no-repeat;
   margin-bottom: 1rem;
 }
 
 .main__content__banner a {
   display: inline-block;
-  background-image: url("/images/view_bg.gif");
+  background-image: url("/images/view_bg.gif"), url("images/view_bg.gif");
   width: 58px;
   height: 44px;
   color: #fff;
@@ -481,15 +491,17 @@ main {
   height: 3px;
 }
 .contact__container::before {
-  background-image: url("/images/contact_top_curve.gif");
+  background-image: url("/images/contact_top_curve.gif"),
+    url("images/contact_top_curve.gif");
 }
 
 .contact__container::after {
-  background-image: url("/images/contact_bottom_curve.gif");
+  background-image: url("/images/contact_bottom_curve.gif"),
+    url("images/contact_bottom_curve.gif");
 }
 
 .contact__form__header {
-  background-image: url("/images/contact_bg.gif");
+  background-image: url("/images/contact_bg.gif"), url("images/contact_bg.gif");
   background-repeat: no-repeat;
   height: 39px;
   display: flex;
@@ -541,10 +553,10 @@ main {
 }
 
 .contact__form__button__container button:first-of-type {
-  background-image: url("/images/reset_bg.gif");
+  background-image: url("/images/reset_bg.gif"), url("images/reset_bg.gif");
 }
 .contact__form__button__container button:last-of-type {
-  background-image: url("/images/submit_bg.gif");
+  background-image: url("/images/submit_bg.gif"), url("images/submit_bg.gif");
 }
 
 /* ////////////// FOOTER SECTION /////////////// */
@@ -558,7 +570,8 @@ footer {
 }
 
 .footer__logo {
-  background-image: url("/images/footer_logo.gif");
+  background-image: url("/images/footer_logo.gif"),
+    url("images/footer_logo.gif");
   width: 328px;
   height: 127px;
 }
